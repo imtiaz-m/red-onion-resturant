@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>my item</li>
+        <li onclick="alert('helo!')">Lorem, ipsum.</li>
+        <li>Est, neque.</li>
+        <li>Dolores, vitae!</li>
+        <li>Inventore, eligendi.</li>
+        <li id="lastPerson">Error, quae.</li>
+    </ul>
+
+    <script>
+         function itemClickHander(event){
+            console.log(event.target.innerText)
+     }
+        document.getElementById("lastPerson").addEventListener('click' ,itemClickHander) ;
+        
+    </script>
+</body>
+</html>
